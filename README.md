@@ -11,7 +11,7 @@ I am:
 - Committing code to Github every day
 - Not worrying about perfection
 
-The goal is to master CSS topics, understand them completely and try everything i learn. By the end of 90 days i want to feel pretty damn confident calling myself a CSS wizard! No imposter syndrome, because this will serve as proof of my capabilities.
+The goal is to master CSS topics, understand them completely and try everything i learn. By the end of 90 days i want to feel pretty damn confident calling myself a CSS wizard! No imposter syndrome, because this will serve as my proof of capabilities.
 
 Topics:
 - [ ] Advanced SCSS (mixins, extends, conditionals, functions)
@@ -31,10 +31,11 @@ Topics:
 - [ ] Modernizr
 - [ ] Units (ems, rems, %, px, vw, vh, vmin, vmax)
 - [ ] Combinators (>, +, ~)
+- [ ] Counters
 - [ ] SVG
 - [ ] Animating SVGs
 - [ ] `z-index`
-- [ ] `content` selector
+- [ ] `content`
 - [ ] CSS with jQuery and JavaScript
 - [ ] Background images
 - [ ] Typography (line-heights, font-smoothing, responsive font sizes)

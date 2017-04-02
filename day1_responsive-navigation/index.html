@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Day 1 - Responsive Sliding Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="#0" class="Nav-trigger"><span class="menu-icon"></span><span class="menu-text">MENU</span></a>
+    <nav class="Nav">
+      <a href="https://aamnah.github.io/90-Days-of-CSS/" class="Nav-link">Home</a>
+      <a href="https://github.com/aamnah/90-Days-of-CSS" class="Nav-link">Code</a>
+      <a href="http://aamnah.com" class="Nav-link">About Aamnah</a>
+      <a href="#0" class="Nav-link">link4</a>
+      <a href="#0" class="Nav-link">link5</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <article>
+        <p>Uses
+          <ul>
+            <li>Flexbox (to create the menu)</li>
+            <li>Media Queries (to make the navigation collapse on smaller screens)</li>
+            <li>Transforms and Transitions (to silde the navigation and transform the menu icon)</li>
+            <li>JavaScript (to handle click events)</li>
+            <li>::before and ::after pseudo-elements (to create the menu icon)</li>
+          </ul>
+        </p>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+    <p><a href="https://github.com/aamnah/90-Days-of-CSS">90 Days of CSS</a> by <a href="http://aamnah.com">Aamnah</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- DEV ONLY - Takana -->
+  <script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+  <script type="text/javascript">
+    takanaClient.run({host: 'localhost:48626'});
+  </script>
+</body>
+</html>

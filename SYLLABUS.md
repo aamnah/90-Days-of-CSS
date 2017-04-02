@@ -1,6 +1,12 @@
 Topics:
 
-- [ ] Advanced SCSS (mixins, extends, conditionals, functions)
+- [ ] Advanced SCSS (mixins, extends, conditionals, loops, functions)
+  - [ ] @mixin
+  - [ ] @extend
+  - [ ] @for
+  - [ ] @each
+  - [ ] @function
+  - [ ] @if
 - [ ] Positioning
 - [ ] Layouts
 - [ ] Grid systems

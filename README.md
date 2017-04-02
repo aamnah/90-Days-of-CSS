@@ -12,3 +12,5 @@ I am:
 - Not worrying about perfection
 
 The goal is to master CSS topics, understand them completely and try everything i learn. By the end of 90 days i want to feel pretty damn confident calling myself a CSS wizard! No imposter syndrome, because this will serve as my proof of capabilities.
+
+- Day 1: [Responsive Sliding Navigation](/day1_responsive-navigation/)

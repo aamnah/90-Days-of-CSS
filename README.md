@@ -13,4 +13,4 @@ I am:
 
 The goal is to master CSS topics, understand them completely and try everything i learn. By the end of 90 days i want to feel pretty damn confident calling myself a CSS wizard! No imposter syndrome, because this will serve as my proof of capabilities.
 
-- Day 1: [Responsive Sliding Navigation](https://aamnah.github.io/90-Days-of-CSS/day1_responsive-navigation/)
+- Day 1: [Responsive Sliding Navigation](https://aamnah.github.io/90-days-of-css/day1_responsive-navigation/)

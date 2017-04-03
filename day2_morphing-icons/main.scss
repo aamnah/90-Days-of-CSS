@@ -1,0 +1,111 @@
+$box-size: 150px;
+$color-1: #E3E3E3;
+$color-2: #F95959;
+$color-3: #455D7A;
+$color-4: #233142;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-1;
+}
+
+.btn {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: $color-4;
+  border-radius: 50%;
+  border: none;
+  // content: '';
+
+  // hide the button text
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+// Hamburger icon
+.btn span,
+.btn span::before,
+.btn span::after {
+  position: absolute;
+  width: 44px;
+  height: 4px;
+  background: $color-2;
+  border-radius: 4px;
+}
+.btn span {
+  top: calc(50% - 2px); // 50% minus half the height of span
+  left: calc(50% - 22px); // 50% minus half the width
+}
+
+.btn span::before,
+.btn span::after {
+  content: ''; // this is required to make the pseudo-elemnts visible
+  left: 0;
+  transition: transform .3s, width .3s;
+}
+.btn span::before {
+  top: 12px;
+}
+.btn span::after {
+  top: -12px;
+}
+
+// Change hamburger icon to Arrow Left on :hover
+.arrow-left:hover span::before {
+  width: 50%;
+  transform: translateY(-6px) rotate(34deg);
+}
+.arrow-left:hover span::after {
+  width: 50%;
+  transform: translateY(6px) rotate(-34deg);
+}
+
+// Change hamburger icon to Arrow Right on :hover
+.arrow-right:hover span::before {
+  width: 50%;
+  transform: translateY(-6px) translateX(100%) rotate(-34deg);
+}
+.arrow-right:hover span::after {
+  width: 50%;
+  transform: translateY(6px) translateX(100%) rotate(34deg);
+}
+
+// Change hamburger icon to X on :hover
+.cross:hover span {
+  background: transparent;
+  transition: background .3s;
+}
+.cross:hover span::before {
+  transform: translateY(-12px) rotate(-45deg);
+}
+.cross:hover span::after {
+  transform: translateY(12px) rotate(45deg);
+}
+
+// Change hamburger icon to ... on :hover
+.ellipsis:hover span,
+.ellipsis:hover span::before, 
+.ellipsis:hover span::after {
+  width: 4px;
+  transition: transform .3s, width .3s;  
+  transform: scale(2, 2);
+}
+.ellipsis:hover span {
+  left: calc(50% - 2px);
+}
+.ellipsis:hover span::before {
+  transform: translateY(-12px) translateX(-10px);
+}
+.ellipsis:hover span::after {
+  transform: translateY(12px) translateX(10px);
+}

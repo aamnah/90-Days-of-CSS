@@ -1,2 +1,89 @@
+*, *::after, *::before {
+  box-sizing: border-box; }
+
 body {
-  background: blue; }
+  margin: 0;
+  padding: 0;
+  background: #E3E3E3; }
+
+.btn {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #233142;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.btn span,
+.btn span::before,
+.btn span::after {
+  position: absolute;
+  width: 44px;
+  height: 4px;
+  background: #F95959;
+  border-radius: 4px; }
+
+.btn span {
+  top: calc(50% - 2px);
+  left: calc(50% - 22px); }
+
+.btn span::before,
+.btn span::after {
+  content: '';
+  left: 0;
+  transition: transform .3s, width .3s; }
+
+.btn span::before {
+  top: 12px; }
+
+.btn span::after {
+  top: -12px; }
+
+.arrow-left:hover span::before {
+  width: 50%;
+  transform: translateY(-6px) rotate(34deg); }
+
+.arrow-left:hover span::after {
+  width: 50%;
+  transform: translateY(6px) rotate(-34deg); }
+
+.arrow-right:hover span::before {
+  width: 50%;
+  transform: translateY(-6px) translateX(100%) rotate(-34deg); }
+
+.arrow-right:hover span::after {
+  width: 50%;
+  transform: translateY(6px) translateX(100%) rotate(34deg); }
+
+.cross:hover span {
+  background: transparent;
+  transition: background .3s; }
+
+.cross:hover span::before {
+  transform: translateY(-12px) rotate(-45deg); }
+
+.cross:hover span::after {
+  transform: translateY(12px) rotate(45deg); }
+
+.ellipsis:hover span,
+.ellipsis:hover span::before,
+.ellipsis:hover span::after {
+  width: 4px;
+  transition: transform .3s, width .3s;
+  transform: scale(2, 2); }
+
+.ellipsis:hover span {
+  left: calc(50% - 2px); }
+
+.ellipsis:hover span::before {
+  transform: translateY(-12px) translateX(-10px); }
+
+.ellipsis:hover span::after {
+  transform: translateY(12px) translateX(10px); }
+
+/*# sourceMappingURL=main.css.map */

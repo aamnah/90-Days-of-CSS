@@ -1,0 +1,77 @@
+// COLORS
+$color-blue: #2c97de;
+$color-green: green;
+$color-red: #e94b35;
+$color-gray: #cfd9db;
+$color-light: $color-gray;
+$color-dark: #2b3e51;
+$color-text: $color-dark;
+
+// DIMENSIONS
+$dimension-borderRadius: .25em;
+$dimension-padding: 1em;
+$dimension-margin: 1em;
+
+// DEFAULT STYLES
+$border--default: 1px solid $color-gray;
+$border--selected: 1px solid $color-blue;
+$border--invalid: 1px solid $color-red;
+
+/*
+RESET
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+DEFAULT FORM ELEMENT STYLES
+*/
+input,
+select,
+textarea,
+button {
+	display: block;
+	border: $border--default;
+	border-radius: $dimension-borderRadius;
+	color: $color-text;
+	margin-bottom: $dimension-margin;
+	margin-right: $dimension-margin;
+	padding: $dimension-padding;
+	
+	&:focus {
+		outline: none;
+		border: $border--selected;
+	}
+	
+	&:invalid {
+		border: $border--invalid;
+	}
+}
+
+textarea {
+	vertical-align: top; 
+}
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+	display: inline;
+}
+
+input[type="button"],
+input[type="submit"]{
+	background: $color-blue;
+	color: white;
+	border: none;
+	font-weight: 500;
+}
+
+input[type="color"] {
+	padding: 0;
+}

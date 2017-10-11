@@ -1,0 +1,54 @@
+/*
+RESET
+*/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+DEFAULT FORM ELEMENT STYLES
+*/
+input,
+select,
+textarea,
+button {
+  display: block;
+  border: 1px solid #cfd9db;
+  border-radius: 0.25em;
+  color: #2b3e51;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: 1em; }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+    border: 1px solid #2c97de; }
+  input:invalid,
+  select:invalid,
+  textarea:invalid,
+  button:invalid {
+    border: 1px solid #e94b35; }
+
+textarea {
+  vertical-align: top; }
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+  display: inline; }
+
+input[type="button"],
+input[type="submit"] {
+  background: #2c97de;
+  color: white;
+  border: none;
+  font-weight: 500; }
+
+input[type="color"] {
+  padding: 0; }

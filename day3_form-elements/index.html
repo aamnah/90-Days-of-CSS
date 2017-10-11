@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />		
+	<title>Day 3 - Styling Form Elements</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<form action="#" method="post" id="orderForm">
+		<h3>Order Form Example</h3>
+		<fieldset>
+			<legend>Order a T-Shirt</legend>
+		</fieldset>		
+	</form>
+	
+	<form action="#" method="post" id="contactForm">
+		<h3>Contact Form Example</h3>
+		<fieldset>
+			<legend>Contact Us</legend>
+			<div>
+				<label for="contactName">Name: </label>
+				<input type="text" id="contactName" name="contactName" placeholder="John Doe">				
+			</div>
+
+			<div>
+				<label for="contactEmail">Email: </label>
+				<input type="email" id="contactEmail" name="contactEmail" placeholder="you@domain.com">				
+			</div>
+
+			<div>
+				<label for="contactPhone">Phone: </label>
+				<input type="tel" id="contactPhone" name="contactPhone" placeholder="(555) 555 555">				
+			</div>
+
+			<div>
+				<label for="contactMessage">Message: </label>
+				<textarea id="contactMessage" name="contactMessage" placeholder="Name"></textarea>				
+			</div>
+
+			<div>
+				<input type="submit" value="Send">
+			</div>
+		</fieldset>
+	</form>
+	
+	<form action="#" method="post" id="demoForm">
+	<h3>Form Elements and (most of the) Input Types</h3>
+    <label for="progress-bar">Progress</label>
+    <progress value="75" max="100" name="progress-bar"></progress>
+		
+    <fieldset>  
+     <legend>Account Info</legend>
+      <label for="name">Name </label>
+      <input type="name" id="name">
+      <label for="email">Email </label>
+      <input type="email" id="email">
+      <label for="password">Password </label>
+      <input type="password" id="password" maxlength="32"> 
+      <input type="hidden" vaue="hidden">   
+    </fieldset>
+
+    <fieldset>
+     <legend>Order info</legend>
+      <label for="size">Choose your size (simple select)</label>
+      <select id="size">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+      <input type="radio" id="radio"><label for="radio">Radio</label>  
+    </fieldset>
+
+    <fieldset>
+      <legend>Buttons</legend>
+      <input type="button" value="Input Button">
+      <input type="submit">
+      <input type="reset"> 
+      <button name="click-me">Button</button>
+      <button type="submit" name="submit" value="foo">Button Submit</button>            
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio, Select and Checkboxes</legend>
+      <label for="size">Select</label>
+      <select id="size">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+
+      <input type="checkbox" value="cb1" id="cb1"><label for="cb1">checkbox 1</label>
+      <input type="checkbox" value="cb2" id="cb2"><label for="cb2">checkbox 2</label>
+
+      <input type="radio" id="radio2"><label for="radio2">Radio</label> 
+      <input type="radio" id="radio3"><label for="radio3">Radio</label> 
+      <input type="radio" id="radio4"><label for="radio4">Radio</label>  
+    </fieldset>
+
+    <fieldset>
+      <legend>Misc. Types (9)</legend>
+
+      <label for="color">Color</label>
+      <input type="color" id="color">
+
+      <label for="range">range</label>
+      <input type="range" min="0" max="100">     
+
+      <label for="search">search</label>
+      <input type="search">
+
+      <label for="file">File</label>
+      <input type="file"> 
+
+      <label for="number">number</label>
+      <input type="number">  
+
+      <label for="tel">tel</label>
+      <input type="tel">
+
+      <label for="time">time</label>
+      <input type="time"> 
+
+      <label for="url">url</label>
+      <input type="url">  
+
+      <label for="week">week</label>
+      <input type="week">
+    </fieldset>
+
+    <fieldset>
+      <legend>Time &amp; Date (5)</legend>
+      <label for="date">date</label>
+      <input type="date">     
+
+      <label for="month">month</label>
+      <input type="month">
+
+      <label for="time">time</label>
+      <input type="time"> 
+
+      <label for="week">week</label>
+      <input type="week">  
+
+      <label for="datetime-local">datetime-local</label>
+      <input type="datetime-local">
+    </fieldset>	
+	</form>
+	
+	<!-- TAKANA - DEV ONLY -->
+	<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+	<script type="text/javascript">
+		takanaClient.run({host: 'localhost:48626'});
+	</script>
+</body>
+</html>
